@@ -51,7 +51,7 @@ void filetime2() {
 void sizecmp() {
     printf("size compare\n");
     if (stat1.st_size > stat2.st_size) printf("text1 is bigger\n\n");
-    else if (stat1.st_size < stat2.st_size) printf("text1 is bigger\n\n");
+    else if (stat1.st_size < stat2.st_size) printf("text2 is bigger\n\n");
     else printf("size are equal\n\n");
 }
 
@@ -59,7 +59,7 @@ void sizecmp() {
 void blockcmp() {
     printf("block compare\n");
     if (stat1.st_blocks > stat2.st_blocks) printf("text1 is bigger\n\n");
-    else if (stat1.st_blocks < stat2.st_blocks) printf("text1 is bigger\n\n");
+    else if (stat1.st_blocks < stat2.st_blocks) printf("text2 is bigger\n\n");
     else printf("size are equal\n\n");
 }
 
