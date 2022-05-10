@@ -77,5 +77,12 @@ void datecmp() {
 
 //두 개의 파일 수정 시간을 비교하는 함수 작성
 void timecmp(){
-    
+    int tm1 = ((time1->tm_hour * 100) + time1->tm_min) * 100 + time1->tm_sec;
+    time2 = localtime(&stat2.st_mtime);
+    int tm2 = ((time2->tm_hour * 100) + time2->tm_min) * 100 + time2->tm_sec;
+
+    printf("time compare\n");
+    if (tm1 > tm2) printf("text2 is early\n\n");
+    else if (tm1 < tm2) printf("text1 is early\n\n");
+    else printf("same time\n\n");
 }
